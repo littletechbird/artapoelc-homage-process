@@ -47,7 +47,7 @@ This write-up is a full, honest record of how the homage was made: the timeline,
 | Approved cut (720p, with song) | 720×1280, 285,754,373 bytes, SHA-256 `1950f27351d54b6659e218ef8b399b5c0462689e55f3f99e70916537d5798c08` |
 | Silent master (720p) | 274,336,730 bytes, SHA-256 `e71ce355ad9925ebcf6aa4327e61a394a2614321297c12c2ef9a27cb3fdf5cfe` |
 
-The picture was built silent first, then a separate copy had her song laid underneath as the gift. Brent posted the finished video himself. No agent posted or uploaded it anywhere public.
+The picture was built silent first, then a separate copy had her song laid underneath as the gift. The creator posted the finished video himself. No agent posted or uploaded it anywhere public.
 
 ![Alternate thumbnail: a sharp stare, with the caption ARTAPOELC fan homage.](images/thumb-fan-homage-1280x720.jpg)
 
@@ -61,7 +61,7 @@ The finished video is vertical. This 9:16 thumbnail shows the costume more fully
 
 A queen who does not want the throne. In slots 1 to 13 she escapes and dodges. Slots 14 to 28 are a push and pull between duty and freedom. In slots 29 to 31 she owns it: she crowns herself, raises a toast, and winks.
 
-Brent's tone rule: the lyrics are dark, but nothing on screen plays dark unless it's also funny. Blood becomes pomegranate juice, the cobra becomes her deadpan pet, the tomb becomes a nap pod, and the dagger slices a mango. Her paint flecks are always gold, never red. She is an adult in every shot. (Brent noted that the artist skipped making a video herself because she worried it would come out too dark.)
+The tone rule: the lyrics are dark, but nothing on screen plays dark unless it's also funny. Blood becomes pomegranate juice, the cobra becomes her deadpan pet, the tomb becomes a nap pod, and the dagger slices a mango. Her paint flecks are always gold, never red. She is an adult in every shot.
 
 ## Timeline
 
@@ -83,9 +83,9 @@ The finished cut is 287.000 s, described in the logs as the exact length of the 
 - **10:22 AM.** A reference copy of the official video was pulled with yt-dlp (format 137+140). YouTube auto-captions were saved. A frame was grabbed every 2 s so the lyric captions burned into the official video could be read (OCR, then reading by eye). A local Whisper transcription was made from 10:23 to 10:34 to fill in words cut off on screen. No published lyric sheet could be found, so every lyric in the plan comes from what's on screen, and filled-in words are marked as transcribed.
 - **About 10:26 to 10:27.** Hero portraits A, B, and C, plus a full-body costume sheet, were generated with GenerateImage. Portrait B was picked.
 - **10:27.** Beat sheet v1 was written (29 beats; see [Appendix B](#appendix-b-beat-sheet-v1-earlier-planning-document)).
-- **About 10:30.** Brent set the theme as her reluctance to take the throne. He asked for a silent build first, with a copy carrying her song as a gift if it turned out good enough.
+- **About 10:30.** The creator set the theme as her reluctance to take the throne, and asked for a silent build first, with a copy carrying her song as a gift if it turned out good enough.
 - **10:31.** A 10-clip first batch was generated. The later shot plan mapped three of those clips to slots.
-- **About 10:33.** Brent added the rule that every shot's action comes from the lyric under it, and that the humor has to come from what she does.
+- **About 10:33.** The creator added the rule that every shot's action comes from the lyric under it, and that the humor has to come from what she does.
 - **10:35.** Shot plan v1 was written: 31 slots. The full table is in [Appendix A](#appendix-a-shot-plan-v1). This is the plan the video was cut to, and it supersedes the earlier beat sheet.
 - **10:39.** Keyframe generation began.
 - **10:56.** The hero choice was locked in `hero/CHOSEN.txt` (see [Appendix C](#appendix-c-hero-choice)).
@@ -94,7 +94,7 @@ The finished cut is 287.000 s, described in the logs as the exact length of the 
 ### Monday, November 9 midday: the generation burn
 
 - **About 12:37 to 12:40 PM.** Four parallel generation lines took over, split by song section. Weekly usage read 34.1%. That is the earliest reading found; there is no reading from before the burn.
-- **About 1:45 to 1:53 PM.** Brent set a new stop rule: keep generating until 99% of weekly usage or 3:00 PM, whichever comes first, and use no extra or on-demand credits.
+- **About 1:45 to 1:53 PM.** The creator set a new stop rule: keep generating until 99% of weekly usage or 3:00 PM, whichever comes first, and use no extra or on-demand credits.
 - **1:56 PM.** A fifth line ("X alts") started at 55.5%. It made alternate takes for the choruses, the headdress off/on beat, the throne hesitation, and "owns the throne".
 - **About 2:30 PM.** All four section lines restarted after an interruption and resumed from their progress files.
 - **2:42 PM.** A scheduled burn check recorded 85.6% and 494 clips in `clips/`.
@@ -106,18 +106,18 @@ The finished cut is 287.000 s, described in the logs as the exact length of the 
 - **3:20 PM.** The last 48 clips nobody had checked yet were LOOK-checked. That made verdicts for all 564 clips: 454 PASS, 96 partial, 14 FAIL.
 - **3:23 PM.** All 70 X alt clips were on the home PC and hash-checked (70 OK, 0 bad).
 - Then the keeper list, the shortlist, and contact sheets were built:
-  - `keepers 420.md`: exactly 420 clips, which is the number Brent asked for (406 PASS plus 14 strong partials, no FAILs).
+  - `keepers 420.md`: exactly 420 clips, which is the number the creator asked for (406 PASS plus 14 strong partials, no FAILs).
   - `shortlist v1.md`: 31 slots, each with a best take and a backup.
   - Best-pick contact sheets.
-- Brent reviewed the stills: they "look amazing", and the 31-shot selection was approved for the silent rough cut.
+- The creator reviewed the stills: they "look amazing", and the 31-shot selection was approved for the silent rough cut.
 - **5:00 PM.** `rough cut v1 silent.mp4` was built with ffmpeg: 39 segments, hard cuts only, 287.0 s, 6,888 frames at 24 fps.
 - **5:10 PM.** The rough cut was LOOK-checked, which found two fixes: an empty wall shot at 1:40, replaced with 1 s of the nap take; and a near-jump cut at 4:26, replaced with a close sip. It was rebuilt at 287.0 s.
 - **5:30 PM.** All 420 keepers were on the home PC and matched their SHA-256 manifest (0 bad, 0 missing, 0 extra).
 - **5:59 PM.** The silent rough cut was on the home PC and its hash matched.
-- **About 6:08 PM.** Brent watched the silent cut and called it his favorite video ever: "Disney quality".
-- **6:08 PM.** A private review copy with her song laid underneath was built with ffmpeg and shared with Brent privately in three parts for review.
+- **About 6:08 PM.** The creator watched the silent cut and called it a favorite: "Disney quality".
+- **6:08 PM.** A review copy with her song laid underneath was built with ffmpeg.
 - **6:18 PM.** The version with her song was on the home PC and its hash matched.
-- **About 6:25 PM.** Brent watched it from his own drive and said "perfect, upscale it to 4K".
+- **About 6:25 PM.** The creator watched it privately and said "perfect, upscale it to 4K".
 
 ### Monday, November 9 evening: 4K and posting
 
@@ -129,7 +129,7 @@ The finished cut is 287.000 s, described in the logs as the exact length of the 
 - **About 7:15 PM.** The agent watching the job was cut off. The runner itself kept going. A new watcher checked in and found no relaunch was needed.
 - **7:42 PM.** The encode finished, about 38 minutes after it started.
 - **7:50 PM.** A full LOOK passed (see the 4K checks under [How a take was checked](#how-a-take-was-checked-look)).
-- **About 7:54 PM.** Brent: "so good". He posted it himself. No agent posted or uploaded it anywhere public.
+- **About 7:54 PM.** The creator called it "so good" and posted it himself. No agent posted or uploaded it anywhere public.
 
 ## Tools
 
@@ -187,7 +187,7 @@ Each take got PASS, PARTIAL, or FAIL with a clean range in seconds, ±0.5 s. Typ
 
 | Agent | Role |
 |---|---|
-| **Brent** (human) | Creative lead. Set the theme, the tone rule, the stop rules, and the 420-keeper target. Approved stills, cut, song version, and 4K. Posted it himself. |
+| **Creator** (human) | Creative lead. Set the theme, the tone rule, the stop rules, and the 420-keeper target. Approved stills, cut, song version, and 4K. Posted it himself. |
 | **Director** (Tempotage, the video bot) | Studied the song, read the lyrics, wrote the beat sheet and shot plan, picked the hero, launched and supervised the lines, ran the burn checks, ran curation and the cut, laid in the song, and watched the 4K run. |
 | **Line A1** (`c01`–`c10`, `b1`) | Slots 1–10, 0:00–1:12. Taken over by a second worker (A1b) at 12:38 PM. 135 clips (plus 5 early clips for later slots that were handed to A2 and B). |
 | **Line A2** | Slots 11–19, 1:12–2:24. 110 clips. |
@@ -197,7 +197,7 @@ Each take got PASS, PARTIAL, or FAIL with a clean range in seconds, ±0.5 s. Typ
 | **Curation** | LOOKed the 48 clips nobody had checked yet, compiled verdicts for all 564, then built the 420 keepers, the 31-slot shortlist, the rough cut, and the copy with the song. |
 | **Upscale / 4K** | Wrote and ran the resumable Real-ESRGAN runner on the home PC, fixed the runner bug, watched the encode, and did the final LOOK. |
 | **Burn check** (scheduled) | Recorded usage, clip counts, and line status on a schedule. It stopped at 99% or 3:00 PM, and the 2:42 PM check was the last one. |
-| **Phoenix** | Compiled this public write-up from the production dossier. |
+| **Compiler** | Compiled this public write-up from the production dossier. |
 
 Each line wrote its own resumable progress file (`progress 0000-0112.md`, `progress 0112-0224.md`, `progress 0224-0336.md`, `progress 0336-end.md`, `progress X alts.md`, `progress curation.md`, `progress 4K.md`). When a worker was cut off, a new one read the file and carried on from there.
 
@@ -228,7 +228,7 @@ The line counts add up: 135 + 110 + 137 + 107 + 5 + 70 = 564. The verdicts add u
 | Speed | about 3.4 fps on the RTX 5060 Ti (300 frames per 87 s chunk) |
 | Upscale finished | 7:04 PM PT |
 | Encode | about 2.6 to 2.8 fps, 7:04 to 7:42 PM PT, **about 38 min** |
-| Temporary files left on disk | about 80 GB of frames, kept until Brent says to delete them |
+| Temporary files left on disk | about 80 GB of frames, kept until the creator says to delete them |
 
 ## Prompts
 
@@ -346,7 +346,7 @@ A UTC day runs 4 PM to 4 PM PT, so "UTC Nov 9" is November 8 4 PM PT to November
 7. **Stop rules belong in writing.** "99% or 3:00 PM, no extra credits" was written into every progress file, and a scheduled burn check recorded usage as it ran. Nothing new started after 3:00 PM.
 8. **A successful command is not visual success.** Every stage was LOOKed: per take, rough cut, and 4K frame by frame with PSNR. The rough-cut LOOK caught an empty wall pad and a near-jump cut that the edit list didn't show.
 9. **Keep the silent master separate.** Building silent first, then laying the song under a separate copy, kept the music out of everything except the gift copy.
-10. **Leave big temporary files until the owner says so.** About 80 GB of 4K working frames and the staging folders were left in place for Brent to decide.
+10. **Leave big temporary files until the owner says so.** About 80 GB of 4K working frames and the staging folders were left in place for the creator to decide.
 
 ## Privacy
 
@@ -364,7 +364,7 @@ Song: Julie Lacroix, "ARTAPOELC", 4:47 ([https://www.youtube.com/watch?v=rbUCvPw
 
 **Arc:** a queen who does not want the throne. Slots 1–13 are escape and dodging. Slots 14–28 are a push and pull between duty and freedom. Slots 29–31 are where she owns it, exacting and commanding.
 
-**Tone rule (Brent):** the lyrics are dark, but nothing on screen is dark unless it's also funny. Every dark lyric gets a tongue-in-cheek twist: blood becomes pomegranate juice or wine she side-eyes, the cobra is her deadpan pet, a tomb is a place to nap and dodge court, and a dagger slices a mango with exacting precision. No gore, and no menace, death, or despair played straight. Her paint flecks are gold, never red. The overall feel is more sexy and funny than dark.
+**Tone rule:** the lyrics are dark, but nothing on screen is dark unless it's also funny. Every dark lyric gets a tongue-in-cheek twist: blood becomes pomegranate juice or wine she side-eyes, the cobra is her deadpan pet, a tomb is a place to nap and dodge court, and a dagger slices a mango with exacting precision. No gore, and no menace, death, or despair played straight. Her paint flecks are gold, never red. The overall feel is more sexy and funny than dark.
 
 **Personality mix:** S = sultry, Q = quirky/witty, E = exacting. She is a grown adult in every shot.
 
